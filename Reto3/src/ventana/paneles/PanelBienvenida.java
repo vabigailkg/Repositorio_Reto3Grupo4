@@ -1,7 +1,12 @@
-package vista.paneles;
+package ventana.paneles;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -14,9 +19,18 @@ public class PanelBienvenida {
 	public PanelBienvenida(ArrayList<JPanel> paneles) {
 
 		panel = new JPanel();
+		panel.setBounds(0, 0, 1000, 650);
 		panel.setBorder(new EmptyBorder(5, 5, 5, 5));
 
-		JLabel lblNewLabelImagenBienvenida = new JLabel("ImagenBienvenida");
+		JLabel lblNewLabelImagenBienvenida = new JLabel("");
+		lblNewLabelImagenBienvenida.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				paneles.get(0).setVisible(false);
+				paneles.get(8).setVisible(true);
+			}
+		});
+		lblNewLabelImagenBienvenida.setIcon(new ImageIcon("src/ventana/cine-logo.png"));
 		lblNewLabelImagenBienvenida.setBounds(0, 0, 943, 323);
 		panel.add(lblNewLabelImagenBienvenida);
 
@@ -25,6 +39,12 @@ public class PanelBienvenida {
 		panel.add(lblNewLabelTextoBienvenida);
 
 		JButton btnNewButtonBienvenidaRegistro = new JButton("Registrarse");
+		btnNewButtonBienvenidaRegistro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				paneles.get(0).setVisible(false);
+				paneles.get(6).setVisible(true);
+			}
+		});
 		btnNewButtonBienvenidaRegistro.setBounds(597, 338, 141, 42);
 		panel.add(btnNewButtonBienvenidaRegistro);
 
