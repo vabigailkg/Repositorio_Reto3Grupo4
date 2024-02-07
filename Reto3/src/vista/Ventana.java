@@ -225,7 +225,7 @@ public class Ventana {
 		JPanel panel9 = panelSeleccionCine.getPanel();
 
 		panel9.setVisible(true);
-
+//hola
 		
 
 		paneles.add(panel9);
