@@ -45,7 +45,7 @@ public class GestorCines {
 				if (null == ret)
 					ret = new ArrayList<Cine>();
 
-				Cine cine = new Cine(0, sql, sql);
+				Cine cine = new Cine(0, null, null);
 
 				int codigoCine = resultSet.getInt("codigoCine");
 				String nombreCine = resultSet.getString("nombreCine");
