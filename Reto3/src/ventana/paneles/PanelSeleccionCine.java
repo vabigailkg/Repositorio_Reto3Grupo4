@@ -32,7 +32,7 @@ public class PanelSeleccionCine {
 		GestorPeliculas gestorPeliculas = new GestorPeliculas();
 
 		JLabel lblNewLabelLogo = new JLabel("");
-		lblNewLabelLogo.setIcon(new ImageIcon("src/ventana/Logo.png"));
+		lblNewLabelLogo.setIcon(new ImageIcon("Reto3/src/ventana/Logo.png"));
 		lblNewLabelLogo.setBounds(781, 21, 195, 195);
 		panel.add(lblNewLabelLogo);
 
@@ -62,7 +62,7 @@ public class PanelSeleccionCine {
 		panel.add(btnNewButtonSeleccionCine_Finalizar);
 
 		JLabel lblNewLabelCine1Imagen = new JLabel("");
-		lblNewLabelCine1Imagen.setIcon(new ImageIcon("src/ventana/cine1modificado.jpg"));
+		lblNewLabelCine1Imagen.setIcon(new ImageIcon("Reto3/src/ventana/cine1modificado.jpg"));
 		lblNewLabelCine1Imagen.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -79,7 +79,7 @@ public class PanelSeleccionCine {
 		panel.add(lblNewLabelCine1Imagen);
 
 		JLabel lblNewLabelCine2Imagen = new JLabel("");
-		lblNewLabelCine2Imagen.setIcon(new ImageIcon("src/ventana/cine2modificado.jpg"));
+		lblNewLabelCine2Imagen.setIcon(new ImageIcon("Reto3/src/ventana/cine2modificado.jpg"));
 		lblNewLabelCine2Imagen.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -96,7 +96,7 @@ public class PanelSeleccionCine {
 		panel.add(lblNewLabelCine2Imagen);
 
 		JLabel lblNewLabelCine3Imagen = new JLabel("");
-		lblNewLabelCine3Imagen.setIcon(new ImageIcon("src/ventana/cine3modificado.jpg"));
+		lblNewLabelCine3Imagen.setIcon(new ImageIcon("Reto3/src/ventana/cine3modificado.jpg"));
 		lblNewLabelCine3Imagen.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {

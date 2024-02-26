@@ -54,7 +54,7 @@ public class PanelBienvenida {
 		});
 
 		JLabel lblNewLabelImagenBienvenida = new JLabel("");
-		lblNewLabelImagenBienvenida.setIcon(new ImageIcon("src/ventana/cine-logo.png"));
+		lblNewLabelImagenBienvenida.setIcon(new ImageIcon("Reto3/src/ventana/cine-logo.png"));
 		lblNewLabelImagenBienvenida.setBounds(244, 22, 540, 430);
 		panel.add(lblNewLabelImagenBienvenida);
 

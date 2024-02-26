@@ -37,7 +37,7 @@ public class PanelResumenCompra {
 		panel.setLayout(null);
 
 		JLabel lblNewLabelLogo = new JLabel("");
-		lblNewLabelLogo.setIcon(new ImageIcon("src/ventana/Logo.png"));
+		lblNewLabelLogo.setIcon(new ImageIcon("Reto3/src/ventana/Logo.png"));
 		lblNewLabelLogo.setBounds(781, 21, 195, 195);
 		panel.add(lblNewLabelLogo);
 
