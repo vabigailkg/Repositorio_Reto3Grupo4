@@ -1,68 +1,106 @@
-package vista.paneles;
+package ventana.paneles;
 
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
+import javax.swing.table.DefaultTableModel;
+
+import bbdd.gestores.GestorSesiones;
+import logica.Funcionalidades;
 
 public class PanelSeleccionPelicula {
-	
+
 	private JPanel panel = null;
+	private Color color = new Color(46, 46, 46);
+	private JTable tablaPeliculas = null;
+	private DefaultTableModel tableModelPeliculas = null;
 
 	public PanelSeleccionPelicula(ArrayList<JPanel> paneles) {
 		panel = new JPanel();
+		panel.setBounds(0, 0, 1000, 650);
 		panel.setBorder(new EmptyBorder(5, 5, 5, 5));
+		panel.setBackground(color);
 
 		panel.setLayout(null);
-		
-		JComboBox comboBox = new JComboBox<String>();
-		comboBox.addItem("Martes");
-		comboBox.setBounds(450, 83, 100, 22);
-		panel.add(comboBox);
-		
-		JLabel lblNewLabel = new JLabel("Pelicula1");
-		lblNewLabel.setBounds(230, 200, 46, 14);
+
+		JLabel lblNewLabelLogo = new JLabel("");
+		lblNewLabelLogo.setIcon(new ImageIcon("src/ventana/Logo.png"));
+		lblNewLabelLogo.setBounds(781, 21, 195, 195);
+		panel.add(lblNewLabelLogo);
+
+		tablaPeliculas = new JTable();
+		tablaPeliculas.setBounds(350, 113, 250, 376);
+		panel.add(tablaPeliculas);
+
+		JLabel lblNewLabel = new JLabel("Lista de peliculas");
+		lblNewLabel.setForeground(new Color(255, 255, 255));
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				paneles.get(9).setVisible(false);
+				paneles.get(10).setVisible(true);
+			}
+		});
+		lblNewLabel.setBounds(420, 80, 100, 14);
 		panel.add(lblNewLabel);
-		
-		JLabel lblNewLabel_1 = new JLabel("Pelicula 2");
-		lblNewLabel_1.setBounds(480, 200, 46, 14);
-		panel.add(lblNewLabel_1);
-		
-		JLabel lblNewLabel_2 = new JLabel("Pelicula 3");
-		lblNewLabel_2.setBounds(730, 200, 46, 14);
-		panel.add(lblNewLabel_2);
-		
-		JLabel lblNewLabel_3 = new JLabel("Pelicula 4");
-		lblNewLabel_3.setBounds(230, 300, 46, 14);
-		panel.add(lblNewLabel_3);
-		
-		JLabel lblNewLabel_4 = new JLabel("Pelicula 5");
-		lblNewLabel_4.setBounds(480, 300, 46, 14);
-		panel.add(lblNewLabel_4);
-		
-		JLabel lblNewLabel_5 = new JLabel("Pelicula 6");
-		lblNewLabel_5.setBounds(730, 300, 46, 14);
-		panel.add(lblNewLabel_5);
-		
-		JLabel lblNewLabel_6 = new JLabel("Pelicula 7");
-		lblNewLabel_6.setBounds(230, 400, 46, 14);
-		panel.add(lblNewLabel_6);
-		
-		JLabel lblNewLabel_7 = new JLabel("Pelicula 8");
-		lblNewLabel_7.setBounds(480, 400, 46, 14);
-		panel.add(lblNewLabel_7);
-		
-		JLabel lblNewLabel_8 = new JLabel("Pelicula 9");
-		lblNewLabel_8.setBounds(730, 400, 46, 14);
-		panel.add(lblNewLabel_8);
-		
+
 		JButton btnNewButtonSeleccionCine_Finalizar = new JButton("Finalizar");
+		btnNewButtonSeleccionCine_Finalizar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				paneles.get(9).setVisible(false);
+				paneles.get(7).setVisible(true);
+			}
+		});
 		btnNewButtonSeleccionCine_Finalizar.setBounds(730, 543, 194, 57);
 		panel.add(btnNewButtonSeleccionCine_Finalizar);
+
+		JButton btnNewButtonVolver = new JButton("Volver");
+		btnNewButtonVolver.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				paneles.get(9).setVisible(false);
+				paneles.get(8).setVisible(true);
+			}
+		});
+		btnNewButtonVolver.setBounds(10, 10, 85, 21);
+		panel.add(btnNewButtonVolver);
+
+		panel.addComponentListener(new ComponentAdapter() {
+			public void componentShown(ComponentEvent e) {
+				Funcionalidades funcionalidades = new Funcionalidades();
+				tableModelPeliculas = funcionalidades.llenarTablaPeliculas(ventana.VentanaMain.cineSeleccionado,
+						paneles.get(9), tablaPeliculas);
+
+				tablaPeliculas.addMouseListener(new java.awt.event.MouseAdapter() {
+					@Override
+					public void mouseClicked(java.awt.event.MouseEvent evt) {
+						int row = tablaPeliculas.rowAtPoint(evt.getPoint());
+						if (row > 0) {
+							ventana.VentanaMain.peliculaSeleccionada = tableModelPeliculas.getValueAt(row, 0)
+									.toString();
+							GestorSesiones gestorSesiones = new GestorSesiones();
+							gestorSesiones.obtenerFechasDeSesiones(ventana.VentanaMain.peliculaSeleccionada,
+									ventana.VentanaMain.cineSeleccionado);
+							paneles.get(9).setVisible(false);
+							paneles.get(10).setVisible(true);
+						}
+					}
+				});
+			}
+		});
 	}
+
 	public JPanel getPanel() {
 		return panel;
 	}

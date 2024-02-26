@@ -1,0 +1,70 @@
+Cine: Elorrieta-Elorrieta
+Sala: A4
+Película:  Barbie
+Fecha: 2024-02-02
+Hora: 16:00:00
+Precio: 12 euros
+-------------------------------------
+Cine: Elorrieta-San-Mames
+Sala: B3
+Película:  It
+Fecha: 2024-02-01
+Hora: 14:00:00
+Precio: 8 euros
+-------------------------------------
+Cine: Elorrieta-Casco-Viejo
+Sala: f1
+Película:  Secreto Matusita
+Fecha: 2024-02-04
+Hora: 20:00:00
+Precio: 12 euros
+-------------------------------------
+Cine: Elorrieta-San-Mames
+Sala: B1
+Película:  Titanic
+Fecha: 2024-02-02
+Hora: 18:00:00
+Precio: 10 euros
+-------------------------------------
+Cine: Elorrieta-Elorrieta
+Sala: A1
+Película: Batman
+Fecha: 2024-02-04
+Hora: 22:00:00
+Precio: 10 euros
+-------------------------------------
+Cine: Elorrieta-San-Mames
+Sala: B4
+Película:  Barbie
+Fecha: 2024-02-02
+Hora: 16:00:00
+Precio: 12 euros
+-------------------------------------
+Cine: Elorrieta-Casco-Viejo
+Sala: C2
+Película:  AVATAR
+Fecha: 2024-02-01
+Hora: 12:00:00
+Precio: 6 euros
+-------------------------------------
+Cine: Elorrieta-Elorrieta
+Sala: A4
+Película:  Et
+Fecha: 2024-02-01
+Hora: 16:00:00
+Precio: 12 euros
+-------------------------------------
+Cine: Elorrieta-Casco-Viejo
+Sala: C1
+Película:  Jhon Wick
+Fecha: 2024-02-02
+Hora: 10:00:00
+Precio: 6 euros
+-------------------------------------
+Precio Total: 88 euros
+Descuento: 50%
+Precio con Descuento: 44.0 euros
+-------------------------------------
+DNI Cliente: 10101010d
+Nombre:  Erick
+Apellidos: Garcia

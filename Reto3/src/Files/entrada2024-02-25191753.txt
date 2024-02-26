@@ -1,0 +1,12 @@
+Cine: Elorrieta-San-Mames
+Sala: B4
+Género: null
+Película:  Barbie
+Fecha: 2024-02-02
+Hora: 16:00:00
+Precio: 12
+DNI Cliente: 10101010d
+-------------------------------------
+Precio Total:12
+Descuento:0
+Precio con Descuento:12.0

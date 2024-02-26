@@ -1,0 +1,19 @@
+Cine: Elorrieta-Casco-Viejo
+Sala: C2
+Película:  AVATAR
+Fecha: 2024-02-01
+Hora: 12:00:00
+Precio: 6 euros
+DNI Cliente: 10101010d
+-------------------------------------
+Cine: Elorrieta-Elorrieta
+Sala: A2
+Película:  AVATAR
+Fecha: 2024-02-01
+Hora: 12:00:00
+Precio: 6 euros
+DNI Cliente: 10101010d
+-------------------------------------
+Precio Total: 12 euros
+Descuento: 20%
+Precio con Descuento: 9.6 euros

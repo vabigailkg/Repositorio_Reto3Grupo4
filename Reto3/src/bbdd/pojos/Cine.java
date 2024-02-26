@@ -7,21 +7,21 @@ import java.util.Objects;
  */
 public class Cine {
 
-	private long id = 0;
-	private String nombre = null;
-	private String direccion = null;
+	private int codigoCine = 0;
+	private String nombreCine = null;
+	private String direccionCine = null;
 
 	/**
 	 * Constructor del objeto cine.
 	 * 
-	 * @param id        Número identificativo del cine.
-	 * @param nombre    Cadena del nombre del cine.
-	 * @param direccion Cadena de la dirección del cine.
+	 * @param codigoCine	 Número identificativo del cine.
+	 * @param nombreCine    Cadena del nombre del cine.
+	 * @param direccionCine Cadena de la dirección del cine.
 	 */
-	public Cine(long id, String nombre, String direccion) {
-		this.id = id;
-		this.nombre = nombre;
-		this.direccion = direccion;
+	public Cine (int codigoCine, String nombreCine, String direccionCine) {
+		this.codigoCine = codigoCine;
+		this.nombreCine = nombreCine;
+		this.direccionCine = direccionCine;
 	}
 
 	/**
@@ -29,35 +29,35 @@ public class Cine {
 	 * 
 	 * @return Número identificativo del cine.
 	 */
-	public long getId() {
-		return id;
+	public int getcodigoCine() {
+		return codigoCine;
 	}
 
 	/**
 	 * Introduce el id del cine.
 	 * 
-	 * @param id Número identificativo del cine.
+	 * @param codigoCine Número identificativo del cine.
 	 */
-	public void setId(long id) {
-		this.id = id;
+	public void setcodigoCine(int codigoCine) {
+		this.codigoCine = codigoCine;
 	}
 
 	/**
 	 * Obtiene el nombre del cine.
 	 * 
-	 * @return Cadena del nombre del cine.
+	 * @return Cadena del nombreCine del cine.
 	 */
-	public String getNombre() {
-		return nombre;
+	public String getnombreCine() {
+		return nombreCine;
 	}
 
 	/**
 	 * Introduce el nombre del cine.
 	 * 
-	 * @param nombre Cadena del nombre del cine.
+	 * @param nombreCine Cadena del nombre del cine.
 	 */
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setnombreCine(String nombreCine) {
+		this.nombreCine = nombreCine;
 	}
 
 	/**
@@ -65,17 +65,17 @@ public class Cine {
 	 * 
 	 * @return Cadena de la dirección del cine.
 	 */
-	public String getDireccion() {
-		return direccion;
+	public String getdireccionCine() {
+		return direccionCine;
 	}
 
 	/**
 	 * Introduce la dirección del cine.
 	 * 
-	 * @param nombre Cadena de la dirección del cine.
+	 * @param nombreCine Cadena de la dirección del cine.
 	 */
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public void setdireccionCine(String direccionCine) {
+		this.direccionCine = direccionCine;
 	}
 
 	/**
@@ -83,7 +83,7 @@ public class Cine {
 	 */
 	@Override
 	public String toString() {
-		return "Cine [id=" + id + ", nombre=" + nombre + ", direccion=" + direccion + "]";
+		return "Cine [codigoCine=" + codigoCine + ", nombreCine=" + nombreCine + ", direccionCine=" + direccionCine + "]";
 	}
 
 	/**
@@ -92,7 +92,7 @@ public class Cine {
 	 */
 	@Override
 	public int hashCode() {
-		return Objects.hash(direccion, id, nombre);
+		return Objects.hash(direccionCine, codigoCine, nombreCine);
 	}
 
 	/**
@@ -107,7 +107,7 @@ public class Cine {
 		if (getClass() != obj.getClass())
 			return false;
 		Cine other = (Cine) obj;
-		return Objects.equals(direccion, other.direccion) && id == other.id && Objects.equals(nombre, other.nombre);
+		return Objects.equals(direccionCine, other.direccionCine) && codigoCine == other.codigoCine && Objects.equals(nombreCine, other.nombreCine);
 	}
 
 }

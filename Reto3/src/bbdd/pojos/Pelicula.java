@@ -7,24 +7,24 @@ import java.util.Objects;
  */
 public class Pelicula {
 
-	private int id = 0;
-	private String nombre = null;
-	private int duracion = 0;
-	private String genero = null;
-	private int coste = 0;
+	private int codigoPelicula = 0;
+	private String nombrePelicula = null;
+	private int duracionPelicula = 0;
+	private String generoPelicula = null;
+	private int costePelicula = 0;
 
 	/**
 	 * Constructor del objeto película.
 	 * 
-	 * @param id     Número identificativo de la película.
-	 * @param nombre Cadena del nombre de la película.
+	 * @param codigoPelicula     Número identificativo de la película.
+	 * @param nombrePelicula Cadena del nombre de la película.
 	 */
-	public Pelicula(int id, String nombre, int duracion, String genero, int coste) {
-		this.id = id;
-		this.nombre = nombre;
-		this.duracion = duracion;
-		this.genero = genero;
-		this.coste = coste;
+	public Pelicula(int codigoPelicula, String nombrePelicula, int duracionPelicula, String generoPelicula, int costePelicula) {
+		this.codigoPelicula = codigoPelicula;
+		this.nombrePelicula = nombrePelicula;
+		this.duracionPelicula = duracionPelicula;
+		this.generoPelicula = generoPelicula;
+		this.costePelicula = costePelicula;
 	}
 
 	/**
@@ -32,17 +32,17 @@ public class Pelicula {
 	 * 
 	 * @return Número identificativo de la película.
 	 */
-	public int getId() {
-		return id;
+	public int getcodigoPelicula() {
+		return codigoPelicula;
 	}
 
 	/**
 	 * Introduce el id de la película.
 	 * 
-	 * @param id Número identificativo de la película.
+	 * @param codigoPelicula Número identificativo de la película.
 	 */
-	public void setId(int id) {
-		this.id = id;
+	public void setcodigoPelicula(int codigoPelicula) {
+		this.codigoPelicula = codigoPelicula;
 	}
 
 	/**
@@ -50,17 +50,17 @@ public class Pelicula {
 	 * 
 	 * @return Cadena del nombre de la película.
 	 */
-	public String getNombre() {
-		return nombre;
+	public String getNombrePelicula() {
+		return nombrePelicula;
 	}
 
 	/**
 	 * Introduce el nombre de la película.
 	 * 
-	 * @param nombre Cadena del nombre de la película.
+	 * @param nombrePelicula Cadena del nombre de la película.
 	 */
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombrePelicula(String nombrePelicula) {
+		this.nombrePelicula = nombrePelicula;
 	}
 
 	/**
@@ -68,17 +68,17 @@ public class Pelicula {
 	 * 
 	 * @return Número entero de la duración de la película.
 	 */
-	public int getDuracion() {
-		return duracion;
+	public int getDuracionPelicula() {
+		return duracionPelicula;
 	}
 
 	/**
 	 * Introduce la duración de la película.
 	 * 
-	 * @param duracion Número entero de la duración de la película.
+	 * @param duracionPelicula Número entero de la duración de la película.
 	 */
-	public void setDuracion(int duracion) {
-		this.duracion = duracion;
+	public void setDuracionPelicula(int duracionPelicula) {
+		this.duracionPelicula = duracionPelicula;
 	}
 
 	/**
@@ -86,17 +86,17 @@ public class Pelicula {
 	 * 
 	 * @return Cadena del género de la película.
 	 */
-	public String getGenero() {
-		return genero;
+	public String getGeneroPelicula() {
+		return generoPelicula;
 	}
 
 	/**
 	 * Introduce el género de la película.
 	 * 
-	 * @param genero Cadena del género de la película.
+	 * @param generoPelicula Cadena del género de la película.
 	 */
-	public void setGenero(String genero) {
-		this.genero = genero;
+	public void setGeneroPelicula(String generoPelicula) {
+		this.generoPelicula = generoPelicula;
 	}
 
 	/**
@@ -104,17 +104,17 @@ public class Pelicula {
 	 * 
 	 * @return Número entero del coste de la película.
 	 */
-	public int getCoste() {
-		return coste;
+	public int getCostePelicula() {
+		return costePelicula;
 	}
 
 	/**
 	 * Introduce el coste de la película.
 	 * 
-	 * @param coste Número entero del coste de la película.
+	 * @param costePelicula Número entero del coste de la película.
 	 */
-	public void setCoste(int coste) {
-		this.coste = coste;
+	public void setCostePelicula(int costePelicula) {
+		this.costePelicula = costePelicula;
 	}
 
 	/**
@@ -123,8 +123,8 @@ public class Pelicula {
 	 */
 	@Override
 	public String toString() {
-		return "pelicula [id=" + id + ", nombre=" + nombre + ", duracion=" + duracion + ", genero=" + genero
-				+ ", coste=" + coste + "]";
+		return "pelicula [codigoPelicula=" + codigoPelicula + ", nombrePelicula=" + nombrePelicula + ", duracionPelicula=" + duracionPelicula + ", generoPelicula=" + generoPelicula
+				+ ", costePelicula=" + costePelicula + "]";
 	}
 
 	/**
@@ -133,7 +133,7 @@ public class Pelicula {
 	 */
 	@Override
 	public int hashCode() {
-		return Objects.hash(coste, duracion, genero, id, nombre);
+		return Objects.hash(costePelicula, duracionPelicula, generoPelicula, codigoPelicula, nombrePelicula);
 	}
 
 	/**
@@ -149,8 +149,8 @@ public class Pelicula {
 		if (getClass() != obj.getClass())
 			return false;
 		Pelicula other = (Pelicula) obj;
-		return coste == other.coste && duracion == other.duracion && Objects.equals(genero, other.genero)
-				&& id == other.id && Objects.equals(nombre, other.nombre);
+		return costePelicula == other.costePelicula && duracionPelicula == other.duracionPelicula && Objects.equals(generoPelicula, other.generoPelicula)
+				&& codigoPelicula == other.codigoPelicula && Objects.equals(nombrePelicula, other.nombrePelicula);
 	}
 
 }

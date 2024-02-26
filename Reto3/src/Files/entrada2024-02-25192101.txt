@@ -1,0 +1,35 @@
+Cine: Elorrieta-San-Mames
+Sala: B2
+Película:  AVATAR
+Fecha: 2024-02-01
+Hora: 12:00:00
+Precio: 6
+DNI Cliente: 10101010d
+-------------------------------------
+Cine: Elorrieta-San-Mames
+Sala: B2
+Película:  AVATAR
+Fecha: 2024-02-01
+Hora: 12:00:00
+Precio: 6
+DNI Cliente: 10101010d
+-------------------------------------
+Cine: Elorrieta-Casco-Viejo
+Sala: C1
+Película:  Jhon Wick
+Fecha: 2024-02-02
+Hora: 10:00:00
+Precio: 6
+DNI Cliente: 10101010d
+-------------------------------------
+Cine: Elorrieta-Elorrieta
+Sala: A4
+Película:  Barbie
+Fecha: 2024-02-02
+Hora: 16:00:00
+Precio: 12
+DNI Cliente: 10101010d
+-------------------------------------
+Precio Total:30
+Descuento:40
+Precio con Descuento:18.0
