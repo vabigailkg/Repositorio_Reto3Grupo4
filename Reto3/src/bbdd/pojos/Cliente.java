@@ -83,4 +83,4 @@ public class Cliente {
 				+ apellidosCliente + ", sexoCliente=" + sexoCliente + ", passwordCliente=" + passwordCliente + "]";
 	}
     
-}
+}//.

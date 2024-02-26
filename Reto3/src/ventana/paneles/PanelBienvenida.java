@@ -84,4 +84,4 @@ public class PanelBienvenida {
 	public JPanel getPanel() {
 		return panel;
 	}
-}
+}//.

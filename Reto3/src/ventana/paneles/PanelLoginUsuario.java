@@ -118,4 +118,4 @@ public class PanelLoginUsuario {
 	public JPanel getPanel() {
 		return panel;
 	}
-}
+}//.

@@ -37,4 +37,4 @@ class GestorCinesTest {
 		// Verificar que la lista no sea nula
 		assertNotNull(listaDeCines);
 	}
-}
+}//.

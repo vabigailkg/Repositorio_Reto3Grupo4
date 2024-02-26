@@ -156,3 +156,4 @@ public class GestorPeliculas {
 		return listaPeliculasPorCine;
 	}
 }
+//.

@@ -99,4 +99,4 @@ class GestorSesionesTest {
 			assertEquals("El precio de la sesión debe ser mayor que cero", sesion.getSala(), "A1");
 		}
 	}
-}
+}//.

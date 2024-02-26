@@ -117,4 +117,4 @@ public class PanelSeleccionCine {
 	public JPanel getPanel() {
 		return panel;
 	}
-}
+}//.

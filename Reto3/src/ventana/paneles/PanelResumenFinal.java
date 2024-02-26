@@ -99,4 +99,4 @@ public class PanelResumenFinal {
 		return panel;
 	}
 
-}
+}//.

@@ -104,4 +104,4 @@ public class PanelConfirmacion {
 	public JPanel getPanel() {
 		return panel;
 	}
-}
+}//.

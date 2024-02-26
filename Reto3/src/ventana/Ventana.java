@@ -1,7 +1,5 @@
 package ventana;
 
-
-
 import java.awt.EventQueue;
 import java.util.ArrayList;
 
@@ -131,4 +129,4 @@ public class Ventana {
 		paneles.add(panel11);
 		frame.getContentPane().add(panel11);
 	}
-}
+}//.

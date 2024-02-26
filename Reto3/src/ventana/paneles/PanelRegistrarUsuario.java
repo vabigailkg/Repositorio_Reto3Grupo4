@@ -183,4 +183,4 @@ public class PanelRegistrarUsuario {
 	public JPanel getPanel() {
 		return panel;
 	}
-}
+}//.

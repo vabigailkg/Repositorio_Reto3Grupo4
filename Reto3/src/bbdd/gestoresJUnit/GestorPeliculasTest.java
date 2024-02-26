@@ -86,4 +86,4 @@ class GestorPeliculasTest {
 		assertTrue("La lista de películas debe contener la película 'Chucky'", chuckyEncontrado);
 	}
 
-}
+}//.

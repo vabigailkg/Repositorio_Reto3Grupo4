@@ -184,4 +184,4 @@ class EmisionTest {
 		assertEquals("Los objetos deben ser iguales", false, esIgual);
 		assertNotEquals("Los objetos deben ser diferentes", true, esIgual);
 	}
-}
+}//.

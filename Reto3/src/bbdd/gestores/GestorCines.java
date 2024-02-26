@@ -83,5 +83,5 @@ public class GestorCines {
 		}
 		return ret;
 	}
-
+//.
 }

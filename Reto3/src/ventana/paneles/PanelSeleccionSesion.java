@@ -130,4 +130,4 @@ public class PanelSeleccionSesion {
 	public JPanel getPanel() {
 		return panel;
 	}
-}
+}//.

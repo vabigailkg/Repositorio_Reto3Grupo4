@@ -61,4 +61,4 @@ public class Sala {
 		return "Sala [codigoSala=" + codigoSala + ", codigoCine=" + codigoCine + ", nombreSala=" + nombreSala + "]";
 	}
     
-}
+}//.

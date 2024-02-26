@@ -125,4 +125,4 @@ public class PanelResumenCompra {
 	public JPanel getPanel() {
 		return panel;
 	}
-}
+}//.

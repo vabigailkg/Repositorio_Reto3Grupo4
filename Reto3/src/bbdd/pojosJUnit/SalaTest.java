@@ -88,4 +88,4 @@ class SalaTest {
 		assertNotEquals("Los objetos deben ser diferentes", true, esIgual);
 	}
 
-}
+}//.

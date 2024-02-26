@@ -110,4 +110,4 @@ public class Cine {
 		return Objects.equals(direccionCine, other.direccionCine) && codigoCine == other.codigoCine && Objects.equals(nombreCine, other.nombreCine);
 	}
 
-}
+}//.

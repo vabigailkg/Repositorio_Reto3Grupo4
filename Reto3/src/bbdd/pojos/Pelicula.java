@@ -153,4 +153,4 @@ public class Pelicula {
 				&& codigoPelicula == other.codigoPelicula && Objects.equals(nombrePelicula, other.nombrePelicula);
 	}
 
-}
+}//.

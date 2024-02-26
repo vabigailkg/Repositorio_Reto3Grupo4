@@ -129,4 +129,4 @@ public class VentanaMain {
 		paneles.add(panel11);
 		frame.getContentPane().add(panel11);
 	}
-}
+}//.

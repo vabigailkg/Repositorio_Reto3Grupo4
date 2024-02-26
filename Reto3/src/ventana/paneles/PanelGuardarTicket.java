@@ -72,4 +72,4 @@ public class PanelGuardarTicket {
 	public JPanel getPanel() {
 		return panel;
 	}
-}
+}//.

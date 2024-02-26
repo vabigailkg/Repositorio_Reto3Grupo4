@@ -126,4 +126,4 @@ public class Entrada {
 				+ ", dniCliente=" + dniCliente + "]";
 	}
 	
-}
+}//.

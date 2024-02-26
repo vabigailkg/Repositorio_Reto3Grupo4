@@ -202,4 +202,4 @@ class EntradaTest {
 		assertNotEquals("Los objetos deben ser diferentes", true, esIgual);
 	}
 
-}
+}//.

@@ -376,4 +376,4 @@ public class Funcionalidades {
 			gestorFacturas.guardarNuevaEntrada(entrada, fechaCompraString, horaCompraString);
 		}
 	}
-}
+}//.
